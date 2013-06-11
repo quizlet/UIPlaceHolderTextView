@@ -21,6 +21,7 @@
 	//Set placeholder
 	[textView setPlaceholder:@"Input string"];
 	[textView setPlaceholderTextColor:[UIColor redColor]];
+    [textView setPlaceholderFont:[UIFont systemFontOfSize:36.0f]];
 }
 
 - (void)viewDidUnload

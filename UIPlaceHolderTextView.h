@@ -14,5 +14,6 @@
 
 @property (nonatomic, strong) NSString *placeholder;
 @property (nonatomic, strong) UIColor  *placeholderTextColor;
+@property (nonatomic, strong) UIFont *placeholderFont;
 
 @end

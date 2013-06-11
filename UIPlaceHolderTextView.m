@@ -14,6 +14,7 @@
 
 @synthesize placeholder = _placeholder;
 @synthesize placeholderTextColor = _placeholderTextColor;
+@synthesize placeholderFont = _placeholderFont;
 
 - (void)setText:(NSString *)string
 {
@@ -118,9 +119,9 @@
 		// Draw the text
 		[_placeholderTextColor set];
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_6_0
-		[_placeholder drawInRect:rect withFont:self.font lineBreakMode:NSLineBreakByTruncatingTail alignment:self.textAlignment];
+		[_placeholder drawInRect:rect withFont:self.placeholderFont lineBreakMode:NSLineBreakByTruncatingTail alignment:self.textAlignment];
 #else
-		[_placeholder drawInRect:rect withFont:self.font lineBreakMode:UILineBreakModeTailTruncation alignment:self.textAlignment];
+		[_placeholder drawInRect:rect withFont:self.placeholderFont lineBreakMode:UILineBreakModeTailTruncation alignment:self.textAlignment];
 #endif
 	}
 }
